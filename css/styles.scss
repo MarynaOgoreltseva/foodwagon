@@ -215,6 +215,7 @@ ul {
         display: flex;
         justify-content: center;
         color: $theme-white;
+        font-size: 18px;
     }
 
 
@@ -230,10 +231,10 @@ ul {
         padding: 80px 0;
     }
     &__list {
-        
         display: flex;
-            flex-wrap: wrap;
-            gap: 16px;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
     }
     
 }
@@ -311,10 +312,9 @@ ul {
     max-width: 307px;
     width: 100%;
     text-align: center;
-    &__img {
-        width: 86px;
-        height: 112px;
-        margin-bottom: 41px;
+    
+    &__svg {
+        filter: drop-shadow(0px 20px 40px rgba(255, 174, 0, 0.29)) drop-shadow(0px 5px 10px rgba(255, 174, 0, 0.26));
     }
     &__title {
         color: #434343;
@@ -341,6 +341,7 @@ ul {
         display: flex;
         gap: 16px;
         flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -371,5 +372,89 @@ ul {
         font-size: 22px;
         font-weight: 700;
         margin-bottom: 16px;
+    }
+}
+
+.restaurant {
+    &__title {
+        text-align: center;
+        color: $theme-gray-900;
+        margin-bottom: 88px;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+    }
+
+}
+
+.discount-restaurant {
+    padding: 8px 16px;
+    color: $theme-white;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 120%;
+    border-radius: 8px;
+    background: #F17228;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    & .icon {
+        width: 18px;
+        height: 22px;
+    }
+    &_fast {
+        background: $theme-primary;
+    }
+}
+
+.item-restaurant {
+    max-width: 357px;
+    width: 100%;
+    &__img {
+        border-radius: 16px;
+    }
+    &__img-link {
+        position: relative;
+    }
+    &__discount {
+        position: absolute;
+        top: 24px;
+        left: 24px;
+        &_fast {
+            left: 166px;
+        }
+    }
+    &__desc {
+        margin: 24px 0 32px;
+    }
+    &__btn {
+        display: inline;
+        border-radius: 16px;
+        background: rgba(241, 114, 40, 0.20);
+        padding: 8px 16px;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 120%;
+        color: $theme-warning;
+    }
+}
+
+.restaurant-desc {
+    display: flex;
+    gap: 24px;
+    font-size: 22px;
+    font-weight: 700;
+    color: $theme-gray-800;
+    &__number {
+        font-weight: 400;
+        color: $theme-primary;
+    }
+    &__stats {
+        display: flex;
+        align-items: center;
+        gap: 8px;
     }
 }
