@@ -39,6 +39,12 @@ ul {
         color: $theme-white;
         font-size: 88px;
     }
+    &_large {
+        color: $theme-white;
+        font-size: 57px;
+        font-weight: 900;
+        line-height: 97.5%;
+    }
     &_medium {
         color: #F17228;
         font-size: 43px;
@@ -591,6 +597,19 @@ ul {
         font-family: 'Open Sans', sans-serif;
         font-weight: 600;
         line-height: 140%;
+    }
+}
+
+.cta {
+    background-image: url(../img/cta-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 91px 0 96px;
+    &__title {
+        max-width: 728px;
+        width: 100%;
+        margin: 0 auto 62px;
     }
 }
 
