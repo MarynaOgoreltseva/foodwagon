@@ -25,6 +25,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-Icon-10:before {
+  content: "\e90a";
+  color: #ffb30e;
+}
+.icon-Icon-9:before {
+  content: "\e90b";
+  color: #fff;
+}
 .icon-Icon-8:before {
   content: "\e907";
   color: #fff;

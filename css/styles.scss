@@ -45,6 +45,10 @@ ul {
     }
     &_xsmall {
         font-size: 22px;
+        color: $theme-gray-800;
+    }
+    &_black {
+        color: #353535;
     }
 }
 
@@ -219,6 +223,31 @@ ul {
         color: $theme-white;
         font-size: 18px;
     }
+    &_restaurant {
+        display: flex;
+        width: 178px;
+        padding: 21px 48px;
+        color: $theme-white;
+        font-size: 18px;
+        font-weight: 700;
+        border-radius: 14px;
+        background: linear-gradient(98deg, #FFBA26 -8.95%, #FF9A0E 109.24%);
+        box-shadow: 0px 20px 40px 0px rgba(255, 174, 0, 0.29), 0px 5px 10px 0px rgba(255, 174, 0, 0.26);
+        & .icon-Icon-9 {
+            width: 9px;
+        }
+    }
+    &_details {
+        justify-content: center;
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 900;
+        text-transform: uppercase;
+        padding: 21px 48px;
+        border-radius: 8px;
+        background: var(--yellow-button, linear-gradient(93deg, #FFB800 -47.72%, #FF8A00 136.81%));
+        box-shadow: 0px 14px 32px 0px rgba(255, 178, 14, 0.29), 0px 5px 8px 0px rgba(222, 151, 0, 0.24);
+    }
 
 
     &__text {
@@ -244,10 +273,6 @@ ul {
 
 .item-deals {
     font-size: 22px;
-    
-    &__link {
-        
-    }
     &__photo {
         position: relative;
     }
@@ -389,8 +414,12 @@ ul {
         flex-wrap: wrap;
         gap: 16px;
         justify-content: center;
+        margin-bottom: 88px;
     }
-
+    &__btn {
+        margin: 0 auto;
+ 
+    }
 }
 
 .discount-restaurant {
@@ -462,6 +491,109 @@ ul {
     }
 }
 
+.search {
+    padding: 82px 0 55px;
+    background: #FEFAF1;
+    &__title-line {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 88px;
+    }
+    &__title {
+        color: $theme-gray-900;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 34px;
+        justify-content: center;
+    }
+    &__item {
+        max-width: 218px;
+        width: 100%;
+        text-align: center;
+    }
+    &__img {
+        border-radius: 144px;
+        margin-bottom: 26px;
+    }
+}
+
+.features {
+    padding: 130px 0 80px;
+    background: #FEEFD0;
+    &__list {
+        padding: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 55px;
+        flex-wrap: wrap;
+        border-radius: 46px;
+        background: #FFF;
+        box-shadow: 0px 27px 82px 0px rgba(255, 174, 0, 0.28), 0px 14px 15px 0px rgba(255, 174, 0, 0.01);
+    }
+    &__item {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+    &__item-line {
+        width: 2px;
+            height: 96px;
+            background-color: #CFCFCF;
+    }
+    &__text {
+        background: linear-gradient(93deg, #FB3C00 -47.72%, #FFB800 136.81%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 35px;
+        line-height: 120%;
+        font-weight: 700;
+    }
+}
+
+.details {
+    padding: 55px 0;
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: 16px;
+        box-shadow: 0px 27px 82px 0px rgba(124, 124, 124, 0.28), 0px 14px 15px 0px rgba(124, 124, 124, 0.06);
+        &_reverse {
+            flex-direction: row-reverse;
+        }
+    }
+    &__text-block {
+        padding: 56px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 519px;
+        width: 100%;
+    }
+    &__text {
+        display: flex;
+        gap: 19px;
+        flex-direction: column;
+        justify-content: center;
+        height: 292px;
+    }
+    &__desc {
+        color: rgba(97, 97, 97, 0.69);
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        line-height: 140%;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .header .wrap {
         justify-content: center;
@@ -475,6 +607,9 @@ ul {
         }
     }
     .header {
+        &__desc {
+            text-align: center;
+        }
         &__form {
             flex-direction: column;
         }
@@ -484,7 +619,7 @@ ul {
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
     .header {
         &__btn-line {
             flex-direction: column;
