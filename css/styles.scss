@@ -142,19 +142,44 @@ ul {
     }
 }
 
+.logo {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    &__img {
+        width: 28px;
+        height: 30px;
+    }
+    &__text {
+        font-size: 31px;
+        font-weight: 700;
+        line-height: 120%;
+        color: $theme-warning;
+        &_color {
+            color: $theme-primary;
+        }
+    }
+    
+}
+
 .header {
     & .wrap {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+        row-gap: 20px;
     }
     padding: 16px 0;
     color: $theme-gray-800;
+    &__logo {
+        order: 1;
+    }
     &__delivery {
         font-family: 'Open Sans', sans-serif;
         font-size: 18px;
         display: flex;
+        order: 2;
     }
     &__delivery-text {
         font-family: 'Source Sans 3', sans-serif;
@@ -162,6 +187,7 @@ ul {
     }
     &__delivery-map {
         display: flex;
+        align-items: center;
         & .icon {
             margin-right: 9px;
         }
@@ -174,6 +200,7 @@ ul {
         font-weight: 700;
     }
     &__search-login {
+        order: 3;
         display: flex;
         gap: 30px;
         align-items: center;
@@ -745,6 +772,7 @@ ul {
         font-weight: 400;
     }
 }
+
 .footer {
     padding: 0 0 69px;
     background: $theme-gray-900;
@@ -803,8 +831,6 @@ ul {
     }
 }
 
-
-
 .social-row {
     display: flex;
     gap: 16px;
@@ -859,7 +885,10 @@ ul {
 }
 
 @media screen and (max-width: 1200px) {
-    .header__delivery {
+    .header__delivery-text {
+        display: none;
+    }
+    .logo__text-box {
         display: none;
     }
     .hero .wrap {
@@ -886,6 +915,18 @@ ul {
 }
 
 @media screen and (max-width: 900px) {
+    
+    .header {
+        &__delivery {
+            font-size: 15px;
+        }
+        &__delivery-text {
+            margin-right: 6px;
+        }
+        &__search-login {
+            gap: 15px;
+        }
+    }
     .features {
         &__list {
             flex-direction: column;
@@ -895,6 +936,25 @@ ul {
             width: 96px;
             background-color: #CFCFCF;
         }
+    }
+}
+
+@media screen and (max-width: 722px) {
+    .header {
+        &__delivery {
+            order: 3;
+        }
+        &__search-login {
+            order: 2;
+            // max-width: calc(100% - 200px);
+            // width: 100%;
+        }
+        // &__search {
+        //     max-width: unset;
+        // }
+        // &__input {
+        //     max-width: unset;
+        // }
     }
 }
 
@@ -926,9 +986,12 @@ ul {
     }
     .app {
         &__link-row {
-                flex-direction: column;
-                row-gap: 20px;
-            }
+            flex-direction: column;
+            row-gap: 20px;
+        }
+    }
+    .logo__text-box {
+        display: none;
     }
 
 }
