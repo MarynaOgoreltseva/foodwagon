@@ -37,14 +37,17 @@
 .icon-3:before {
   content: "\e90c";
   color: #f5f5f5;
+  font-size: 24px;
 }
 .icon-2:before {
   content: "\e90d";
   color: #f5f5f5;
+  font-size: 24px;
 }
 .icon-1:before {
   content: "\e90e";
   color: #f5f5f5;
+  font-size: 24px;
 }
 .icon-Icon-10:before {
   content: "\e90a";
@@ -104,4 +107,5 @@
 }
 .icon-heart:before {
   content: "\e911";
+  color: #f17228;
 }

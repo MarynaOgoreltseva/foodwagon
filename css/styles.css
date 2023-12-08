@@ -444,6 +444,9 @@ ul {
   margin-bottom: 16px;
 }
 
+.restaurant {
+  padding-bottom: 80px;
+}
 .restaurant__title {
   text-align: center;
   color: #212121;
