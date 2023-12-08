@@ -35,9 +35,13 @@ ul {
 .title {
     font-family: 'Source Sans 3', sans-serif;
     font-weight: 700;
-    &_big {
+    &_main {
         color: $theme-white;
         font-size: 88px;
+    }
+    &_xlarge {
+        font-size: 67px;
+        line-height: 106%;
     }
     &_large {
         color: $theme-white;
@@ -270,6 +274,7 @@ ul {
         padding: 21px 24px;
         line-height: 100%;
     }
+    
 
 
     &__text {
@@ -594,6 +599,69 @@ ul {
     }
 }
 
+.app {
+    border-radius: 7216px;
+    background: #FEEFD0;
+    padding: 60px 175px 0 131px;
+    & .wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title {
+        background: $yellow-button;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 16px;
+    }
+    &__text {
+        color: #827E7E;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 140%;
+        margin-bottom: 40px;
+    }
+    &__imgs {
+        flex: 1 0 50%;
+    }
+    &__desc {
+        max-width: 432px;
+        width: 100%;
+        flex: 1 0 50%;
+    }
+    &__link-row {
+        display: flex;
+        gap: 8px;
+    }
+}
+
+.app-btn {
+    padding: 11px 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border-radius: 5px;
+    background: $theme-white;
+    box-shadow: 0px 20px 40px 0px rgba(255, 174, 0, 0.29), 0px 5px 10px 0px rgba(255, 174, 0, 0.26);
+    &__action {
+        text-transform: uppercase;
+        color: $theme-gray-600;
+        font-size: 11px;
+        font-family: 'Source Sans 3', sans-serif;
+        font-weight: 700;
+    }
+    &__name {
+        color: $theme-gray-900;
+        font-size: 26px;
+        font-family: 'Source Sans 3', sans-serif;
+        font-weight: 700;
+    }
+}
+
 .details {
     padding: 55px 0;
     &__box {
@@ -807,6 +875,14 @@ ul {
         gap: 40px;
         align-items: center;
     }
+    .app {
+        padding: 0; 
+        & .wrap {
+            flex-direction: column;
+            row-gap: 40px;
+        }
+        
+    } 
 }
 
 @media screen and (max-width: 900px) {
@@ -824,7 +900,7 @@ ul {
 
 @media screen and (max-width: 600px) {
     .title {
-        &_big {
+        &_main {
             font-size: 70px;
         }
     }
@@ -847,6 +923,12 @@ ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
         row-gap: 40px;
+    }
+    .app {
+        &__link-row {
+                flex-direction: column;
+                row-gap: 20px;
+            }
     }
 
 }
@@ -896,6 +978,12 @@ ul {
         
         &__title {
             font-size: 35px;  
+        }
+    }
+    .item-restaurant__discount {
+        left: 5px;
+        &_fast {
+            left: 150px;
         }
     }
     
