@@ -258,8 +258,17 @@ ul {
         text-transform: uppercase;
         padding: 21px 48px;
         border-radius: 8px;
-        background: var(--yellow-button, linear-gradient(93deg, #FFB800 -47.72%, #FF8A00 136.81%));
+        background: $yellow-button;
         box-shadow: 0px 14px 32px 0px rgba(255, 178, 14, 0.29), 0px 5px 8px 0px rgba(222, 151, 0, 0.24);
+    }
+    &_email-form {
+        border-radius: 14px;
+        border-radius: 8px;
+        background: $yellow-button;
+        box-shadow: 0px 14px 32px 0px rgba(255, 178, 14, 0.29), 0px 5px 8px 0px rgba(222, 151, 0, 0.24);
+        color: #fff;
+        padding: 21px 24px;
+        line-height: 100%;
     }
 
 
@@ -641,6 +650,140 @@ ul {
     }
 }
 
+.footer {
+    padding: 99px 0 69px;
+    background: $theme-gray-900;
+    &__cities-title {
+        color: #FFF;
+        margin-bottom: 40px;
+    }
+    &__cities {
+        margin-bottom: 99px;
+    }
+    &__info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-wrap: wrap; 
+        padding: 63px 0;
+    }
+    &__info-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 607px;
+        width: 100%;
+    }
+    &__column-title {
+        color: #FFF;
+        margin-bottom: 40px;
+    }
+    &__column-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    &__column-link {
+        color: $theme-gray-100;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    &__info-wrapper {
+        max-width: 483px;
+        width: 100%;
+    }
+    &__social {
+        margin-bottom: 43px;
+    }
+    &__social-title {
+        margin-bottom: 40px;
+        color: #F5F5F5;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 120%;
+        text-transform: uppercase;
+        opacity: 0.6;
+    }
+    &__email-title {
+        color: #BBB;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 140%;
+        margin-bottom: 40px;
+    }
+}
+
+.cities-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    &__list-link {
+        color: $theme-gray-100;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+.social-row {
+    display: flex;
+    gap: 16px;
+}
+
+.email-form {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    &__row {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 0 8px 16px;
+        background-color: #F5F5F5;
+        width: calc(100% - 133px);
+        border-radius: 8px;
+    }
+    &__input {
+        background-color: #F5F5F5;
+        outline: none;
+        color: #9E9E9E;
+        font-family: "Open Sans", sans-serif;
+        font-size: 18px;
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+.copyright {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0 19px;
+    &__item {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    &__text {
+        color: $theme-gray-100;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 120%;
+    }
+    &__text_bold {
+        font-weight: 700;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .header__delivery {
         display: none;
@@ -652,6 +795,11 @@ ul {
         &__item {
             flex-wrap: wrap;
         }
+    }
+    .footer__info {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
     }
 }
 
@@ -689,10 +837,13 @@ ul {
         flex-direction: column;
         gap: 0;
     }
-        
+    .cities-box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        row-gap: 40px;
+    }
+
 }
-
-
 
 @media screen and (max-width: 450px) {
     .btn_details {
@@ -704,7 +855,21 @@ ul {
             padding: 15px;
         }
     }
-
+    .email-form {
+        flex-direction: column;
+        &__row {
+            width: 100%;
+        }
+        & .btn {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+    .footer__info-list {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
 
 }
 
@@ -727,4 +892,5 @@ ul {
             font-size: 35px;  
         }
     }
+    
 }
