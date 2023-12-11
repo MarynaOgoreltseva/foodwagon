@@ -80,6 +80,7 @@ ul {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  overflow-y: clip;
 }
 .hero__desc {
   margin-bottom: 132px;
@@ -130,15 +131,31 @@ ul {
   align-self: flex-end;
   position: relative;
 }
-.hero__pic-overlay {
-  max-width: 498px;
-  width: 100%;
-  height: 442px;
-  background: #C9C9C9;
+.hero__pic {
+  position: relative;
+  z-index: 1;
+}
+.hero__ellipse1 {
   position: absolute;
   top: 0;
-  left: 0;
-  mix-blend-mode: overlay;
+  right: 0;
+  width: 611px;
+  height: 612px;
+  border-radius: 612px;
+  background: rgba(196, 196, 196, 0.7);
+  mix-blend-mode: multiply;
+  filter: blur(40.8100013733px);
+}
+.hero__ellipse2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 539px;
+  height: 540px;
+  border-radius: 540px;
+  background: radial-gradient(86.68% 86.68% at 50% 50%, rgba(205, 205, 205, 0.8) 0%, rgba(196, 196, 196, 0) 100%);
+  mix-blend-mode: multiply;
+  filter: blur(13.1028499603px);
 }
 
 .logo {
