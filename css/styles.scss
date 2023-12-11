@@ -938,7 +938,10 @@ ul {
         align-items: center;
     }
     .app {
-        padding: 0; 
+        &__wrapper {
+            padding: 0;
+        }
+        
         & .wrap {
             flex-direction: column;
             row-gap: 40px;
@@ -1054,7 +1057,9 @@ ul {
         text-align: center;
         gap: 40px;
     }
-
+    .title_xlarge {
+        font-size: 43px;
+    }
 }
 
 @media screen and (max-width: 400px) {
