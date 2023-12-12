@@ -261,3 +261,12 @@
     box-shadow: 0px 14px 32px 0px rgba(255, 178, 14, 0.29), 0px 5px 8px 0px rgba(222, 151, 0, 0.24);
     /* add styles end*/
 }
+
+@media screen and (max-width: 768px) {
+    #slider1 .slick-prev,
+        #slider1 .slick-next,
+        #slider2 .slick-prev,
+        #slider2 .slick-next {
+            width: 56px;
+    height: 56px; }
+}
