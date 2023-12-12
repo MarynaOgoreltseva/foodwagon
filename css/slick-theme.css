@@ -91,7 +91,7 @@
 
 .slick-prev
 {
-    left: -131px;
+    left: 0;
     z-index: 1;
 
 background-image: url(../img/chevronleft.png);
@@ -113,7 +113,7 @@ background-image: url(../img/chevronleft.png);
 
 .slick-next
 {
-    right: -131px;
+    right: 0;
     background-image: url(../img/chevronright.png);
 }
 [dir='rtl'] .slick-next

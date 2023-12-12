@@ -447,6 +447,7 @@ ul {
         gap: 16px;
         flex-wrap: wrap;
         justify-content: center;
+        padding: 0 80px;
             // max-width: 1500px;
             // width: 100%;
     }
@@ -973,6 +974,13 @@ ul {
         
     } 
 }
+
+// @media screen and (max-width: 1024px) {
+//     .popular__list {
+//         max-width: 762px;
+//         width: 100%;
+//     }
+// }
 
 @media screen and (max-width: 900px) {
     

@@ -434,6 +434,7 @@ ul {
   gap: 16px;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 0 80px;
 }
 
 .item-popular {
