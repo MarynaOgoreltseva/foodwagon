@@ -573,12 +573,13 @@ ul {
 .search__title {
   color: #212121;
 }
-.search__title-img {
+.search__slider-btn {
   height: 76px;
+  width: 163px;
 }
 .search__title-btns {
   display: flex;
-  gap: 26px;
+  gap: 40px;
 }
 .search__list {
   display: flex;

@@ -590,12 +590,13 @@ ul {
     &__title {
         color: $theme-gray-900;
     }
-    &__title-img {
+    &__slider-btn {
         height: 76px;
+        width: 163px;
     }
     &__title-btns {
         display: flex;
-        gap: 26px;
+        gap: 40px;
     }
     &__list {
         display: flex;

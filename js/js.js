@@ -1,4 +1,4 @@
-$('.popular__list').slick({
+$(' #slider1').slick({
   dots: false,
   infinite: true,
   speed: 300,
@@ -44,4 +44,11 @@ $('.popular__list').slick({
     // settings: "unslick"
     // instead of a settings object
   ]
+});
+
+
+$('#slider2').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3
 });
