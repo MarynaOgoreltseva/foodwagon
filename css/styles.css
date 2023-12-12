@@ -575,7 +575,7 @@ ul {
 }
 .search__slider-btn {
   height: 76px;
-  width: 163px;
+  width: 155px;
 }
 .search__title-btns {
   display: flex;
@@ -1015,6 +1015,9 @@ ul {
   }
   .title_xlarge {
     font-size: 43px;
+  }
+  .search__title-line {
+    justify-content: center;
   }
 }
 @media screen and (max-width: 400px) {

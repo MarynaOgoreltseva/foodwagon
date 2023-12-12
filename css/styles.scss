@@ -592,7 +592,7 @@ ul {
     }
     &__slider-btn {
         height: 76px;
-        width: 163px;
+        width: 155px;
     }
     &__title-btns {
         display: flex;
@@ -1092,6 +1092,9 @@ ul {
     }
     .title_xlarge {
         font-size: 43px;
+    }
+    .search__title-line {
+        justify-content: center;
     }
 }
 
