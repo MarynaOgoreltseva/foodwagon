@@ -126,3 +126,12 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+ 
+@media (min-width: 440px) and (max-width: 510px) {
+    #slider1.slick-initialized .slick-slide {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        justify-content: space-between;
+    }
+}

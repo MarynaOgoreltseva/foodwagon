@@ -6,7 +6,7 @@ $(' #slider1').slick({
   slidesToScroll: 5,
   responsive: [
     {
-      breakpoint: 1025,
+      breakpoint: 1125,
       settings: {
         slidesToShow: 4,
         slidesToScroll: 4,
@@ -15,7 +15,7 @@ $(' #slider1').slick({
       }
     },
     {
-      breakpoint: 769,
+      breakpoint: 950,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -24,7 +24,7 @@ $(' #slider1').slick({
       }
     },
     {
-      breakpoint: 601,
+      breakpoint: 755,
       settings: {
         slidesToShow: 2,
           slidesToScroll: 2,
@@ -33,7 +33,7 @@ $(' #slider1').slick({
       }
     },
     {
-      breakpoint: 481,
+      breakpoint: 440,
       settings: {
         slidesToShow: 1,
           slidesToScroll: 1,
