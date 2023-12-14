@@ -16,9 +16,6 @@ img {
   display: block;
   width: 100%;
 }
-img:hover {
-  transform: scale(1.03);
-}
 
 body {
   margin: 0;
@@ -39,15 +36,15 @@ button {
 }
 
 .btn:hover {
-  transition: all 0.2s linear;
-  box-shadow: inset 0 -2px 12px 1px rgba(0, 0, 0, 0.5);
+  transform: scale(1.03);
 }
 
+.header__search:hover,
 .email-form__row:hover,
 .hero__form-input:hover,
 button.btn:hover {
-  transition: all 0.2s linear;
-  box-shadow: 0px 14px 32px 0px rgba(255, 178, 14, 0.29), 0px 5px 8px 0px rgba(222, 151, 0, 0.24);
+  transform: scale(1.02);
+  transition: 0.2s;
 }
 
 input {
@@ -341,6 +338,8 @@ input {
   color: #fff;
   padding: 21px 24px;
   line-height: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 14px 32px 0px rgba(255, 178, 14, 0.29), 0px 5px 8px 0px rgba(222, 151, 0, 0.24);
 }
 .btn__text {
   flex-shrink: 0;
@@ -361,6 +360,9 @@ input {
 
 .item-deals {
   font-size: 22px;
+}
+.item-deals:hover {
+  text-decoration: underline;
 }
 .item-deals__photo {
   position: relative;
@@ -566,8 +568,7 @@ input {
   color: var(--theme-success, #79B93C);
 }
 .item-restaurant__btn-link:hover {
-  transition: all 0.2s linear;
-  box-shadow: inset 0 -2px 12px 1px rgba(0, 0, 0, 0.5);
+  transform: scale(1.03);
 }
 
 .restaurant-desc {
@@ -618,6 +619,9 @@ input {
   max-width: 218px;
   width: 100%;
   text-align: center;
+}
+.search__item-link:hover {
+  text-decoration: underline;
 }
 .search__img {
   border-radius: 144px;
@@ -745,8 +749,7 @@ input {
   font-weight: 700;
 }
 .app-btn:hover {
-  transition: all 0.2s linear;
-  box-shadow: inset 0 -2px 12px 1px rgba(0, 0, 0, 0.5);
+  transform: scale(1.03);
 }
 
 .details {
@@ -849,6 +852,9 @@ input {
   font-size: 18px;
   font-weight: 400;
 }
+.cities-box__list-link:hover {
+  text-decoration: underline;
+}
 
 .footer {
   padding: 0 0 69px;
@@ -882,6 +888,9 @@ input {
   color: #F5F5F5;
   font-size: 18px;
   font-weight: 400;
+}
+.footer__column-link:hover {
+  text-decoration: underline;
 }
 .footer__info-wrapper {
   max-width: 483px;

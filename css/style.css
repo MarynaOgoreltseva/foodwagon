@@ -44,11 +44,20 @@
   color: #F5F5F5;
   font-size: 24px;
 }
+
+
 .icon-1:before {
   content: "\e90e";
   color: #F5F5F5;
   font-size: 24px;
 }
+
+.icon-3:hover::before,
+.icon-1:hover::before,
+.icon-2:hover::before {
+  color: #FFB800;
+}
+
 .icon-Icon-10:before {
   content: "\e90a";
   color: #ffb30e;
