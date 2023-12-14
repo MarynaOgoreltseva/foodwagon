@@ -42,7 +42,10 @@ button {
 
 .header__search:hover,
 .email-form__row:hover,
-.hero__form-input:hover,
+.hero__form-input:hover:hover {
+    transition: all .2s linear;
+    box-shadow: 0px 20px 40px 0px rgba(255, 174, 0, 0.29), 0px 5px 10px 0px rgba(255, 174, 0, 0.26);
+}
 button.btn:hover {
     transform: scale(1.02);
     transition: .2s;
@@ -315,9 +318,9 @@ input {
         & .icon-Icon-9 {
             width: 9px;
         }
-        &:hover {
-            text-decoration: underline;
-        }
+        // &:hover {
+        //     text-decoration: underline;
+        // }
     }
     &_search {
         align-items: baseline;
@@ -326,9 +329,9 @@ input {
         font-weight: 700;
         background: inherit;
         padding: 21px 48px;
-        &:hover {
-            text-decoration: underline;
-        }
+        // &:hover {
+        //     text-decoration: underline;
+        // }
     }
     
     &_details {
@@ -594,7 +597,8 @@ input {
             color: var(--theme-success, #79B93C);
         }
         &:hover {
-            transform: scale(1.03);
+            transform: scale(1.02);
+            transition: .2s;
         }
     }
 }
