@@ -301,6 +301,7 @@ input {
 }
 .btn_restaurant {
   display: flex;
+  align-items: baseline;
   width: 178px;
   padding: 21px 48px;
   color: #FFF;
@@ -313,12 +314,19 @@ input {
 .btn_restaurant .icon-Icon-9 {
   width: 9px;
 }
+.btn_restaurant:hover {
+  text-decoration: underline;
+}
 .btn_search {
+  align-items: baseline;
   color: #FFB30E;
   font-size: 18px;
   font-weight: 700;
   background: inherit;
   padding: 21px 48px;
+}
+.btn_search:hover {
+  text-decoration: underline;
 }
 .btn_details {
   justify-content: center;

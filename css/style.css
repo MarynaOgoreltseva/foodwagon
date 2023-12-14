@@ -61,10 +61,12 @@
 .icon-Icon-10:before {
   content: "\e90a";
   color: #ffb30e;
+  font-size: 14px;
 }
 .icon-Icon-9:before {
   content: "\e90b";
   color: #fff;
+  font-size: 14px;
 }
 .icon-Icon-8:before {
   content: "\e907";

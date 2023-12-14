@@ -303,6 +303,7 @@ input {
     }
     &_restaurant {
         display: flex;
+        align-items: baseline;
         width: 178px;
         padding: 21px 48px;
         color: $theme-white;
@@ -314,14 +315,21 @@ input {
         & .icon-Icon-9 {
             width: 9px;
         }
+        &:hover {
+            text-decoration: underline;
+        }
     }
     &_search {
+        align-items: baseline;
         color: $theme-primary;
         font-size: 18px;
         font-weight: 700;
         background: inherit;
         padding: 21px 48px;
+        &:hover {
+            text-decoration: underline;
         }
+    }
     
     &_details {
         justify-content: center;
