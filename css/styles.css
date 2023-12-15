@@ -39,7 +39,6 @@ button {
   transform: scale(1.03);
 }
 
-.header__search:hover,
 .email-form__row:hover,
 .hero__form-input:hover:hover {
   transition: all 0.2s linear;
@@ -146,7 +145,7 @@ input {
 .hero__input {
   background-color: #F5F5F5;
   outline: none;
-  color: #9E9E9E;
+  color: #424242;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   padding: 14px;
@@ -227,6 +226,7 @@ input {
 .header__delivery-text {
   font-family: "Source Sans 3", sans-serif;
   margin-right: 12px;
+  font-weight: 700;
 }
 .header__delivery-map {
   display: flex;
@@ -245,16 +245,26 @@ input {
 .header__search-login {
   order: 3;
   display: flex;
-  gap: 30px;
   align-items: center;
 }
 .header__search {
-  max-width: 124px;
   width: 100%;
-  font-size: 18px;
   display: flex;
   gap: 8px;
   align-items: center;
+  color: #424242;
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+.header__search ::-moz-placeholder {
+  color: #424242;
+  font-size: 18px;
+  font-weight: 700;
+}
+.header__search ::placeholder {
+  color: #424242;
+  font-size: 18px;
+  font-weight: 700;
 }
 .header__input {
   max-width: 98px;
@@ -263,6 +273,7 @@ input {
   font-family: "Source Sans 3", sans-serif;
   font-size: 18px;
   outline: none;
+  font-weight: 700;
 }
 
 .btn {
@@ -1013,6 +1024,12 @@ input {
   .header__search-login {
     gap: 15px;
   }
+  .header__search ::-moz-placeholder {
+    font-size: 15px;
+  }
+  .header__search ::placeholder {
+    font-size: 15px;
+  }
   .features__list {
     flex-direction: column;
   }
@@ -1028,14 +1045,18 @@ input {
     width: 100%;
   }
 }
+@media (min-width: 722px) and (max-width: 760px) {
+  .header__search {
+    padding: 12px 0;
+  }
+}
 @media screen and (max-width: 722px) {
   .header__delivery {
     order: 3;
   }
   .header__search-login {
     order: 2;
-    width: calc(100% - 50px);
-    margin-left: 20px;
+    width: calc(100% - 30px);
   }
   .header__input {
     max-width: unset;
@@ -1112,6 +1133,9 @@ input {
     margin-left: 5px;
     gap: 5px;
   }
+  .header__search {
+    padding: 12px 0;
+  }
   .hero__btn-line {
     flex-direction: column;
   }
@@ -1133,5 +1157,8 @@ input {
   }
   .btn_search {
     padding: 21px 28px;
+  }
+  .btn_login {
+    padding: 12px 10px;
   }
 }/*# sourceMappingURL=styles.css.map */
