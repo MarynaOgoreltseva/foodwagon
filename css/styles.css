@@ -100,13 +100,14 @@ input {
 }
 .hero .wrap {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   overflow-y: clip;
 }
 .hero__desc {
   margin-bottom: 132px;
+  max-width: 856px;
+  width: 100%;
 }
 .hero__title {
   margin-bottom: 15px;
@@ -120,8 +121,6 @@ input {
 .hero__order {
   padding: 24px;
   background-color: #FFF;
-  max-width: 856px;
-  width: 100%;
   border-radius: 16px;
 }
 .hero__btn-line {
@@ -153,6 +152,8 @@ input {
 .hero__img {
   align-self: flex-end;
   position: relative;
+  flex-shrink: 0;
+  margin-left: 10px;
 }
 .hero__pic {
   position: relative;
@@ -997,6 +998,7 @@ input {
   }
   .hero .wrap {
     justify-content: center;
+    flex-wrap: wrap;
   }
   .footer__info {
     flex-direction: column;
